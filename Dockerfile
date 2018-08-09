@@ -101,16 +101,16 @@ echo 84831b9409646a918e30573bab4c9c91346d8abd > ${ANDROID_HOME}/licenses/android
 echo 33b6a2b64607f11b759f320ef9dff4ae5c47d97a > ${ANDROID_HOME}/licenses/google-gdk-license
 
 # Platform tools
-RUN sdkmanager "platform-tools"
+RUN sdkmanager "platform-tools" > /dev/null
 
 # Android SDKs
 # Please keep these in descending order!
-RUN sdkmanager "platforms;android-28" "platforms;android-27" "platforms;android-26" "platforms;android-25" "platforms;android-22"
+RUN sdkmanager "platforms;android-28" "platforms;android-27" "platforms;android-26" "platforms;android-25" "platforms;android-22" > /dev/null
 
 # Android build tools
 # Please keep these in descending order!
 RUN sdkmanager "build-tools;28.0.2" "build-tools;28.0.1" "build-tools;28.0.0" "build-tools;27.0.3" "build-tools;27.0.2" "build-tools;27.0.1" "build-tools;27.0.0" "build-tools;26.0.2" "build-tools;26.0.1" "build-tools;26.0.0" "build-tools;25.0.3" "build-tools;25.0.2" \
-"build-tools;25.0.1"
+"build-tools;25.0.1" > /dev/null
 
 # Android Emulator
 RUN sdkmanager "emulator" | echo y
