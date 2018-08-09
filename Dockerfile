@@ -6,7 +6,7 @@ ENV ANDROID_HOME="/opt/android-sdk" \
     JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/
     
 # Get the latest version from https://developer.android.com/studio/index.html
-ENV ANDROID_SDK_TOOLS_VERSION="3859397"
+ENV ANDROID_SDK_TOOLS_VERSION="4333796"
 
 # ------------------------------------------------------
 # --- Environments and base directories
