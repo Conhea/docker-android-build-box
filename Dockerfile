@@ -105,11 +105,11 @@ RUN sdkmanager "platform-tools"
 
 # Android SDKs
 # Please keep these in descending order!
-RUN sdkmanager "platforms;android-27" "platforms;android-26" "platforms;android-25" "platforms;android-22"
+RUN sdkmanager "platforms;android-28" "platforms;android-27" "platforms;android-26" "platforms;android-25" "platforms;android-22"
 
 # Android build tools
 # Please keep these in descending order!
-RUN sdkmanager "build-tools;27.0.3" "build-tools;27.0.2" "build-tools;27.0.1" "build-tools;27.0.0" "build-tools;26.0.2" "build-tools;26.0.1" "build-tools;26.0.0" "build-tools;25.0.3" "build-tools;25.0.2" \
+RUN sdkmanager "build-tools;28.0.2" "build-tools;28.0.1" "build-tools;28.0.0" "build-tools;27.0.3" "build-tools;27.0.2" "build-tools;27.0.1" "build-tools;27.0.0" "build-tools;26.0.2" "build-tools;26.0.1" "build-tools;26.0.0" "build-tools;25.0.3" "build-tools;25.0.2" \
 "build-tools;25.0.1"
 
 # Android Emulator
@@ -117,6 +117,7 @@ RUN sdkmanager "emulator" | echo y
 
 # Android System Images, for emulators
 # Please keep these in descending order!
+RUN sdkmanager "system-images;android-28;google_apis;x86" | echo y
 RUN sdkmanager "system-images;android-27;google_apis;x86" | echo y
 RUN sdkmanager "system-images;android-26;google_apis;x86" | echo y
 RUN sdkmanager "system-images;android-25;google_apis;x86_64" | echo y
