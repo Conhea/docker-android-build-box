@@ -1,4 +1,4 @@
-FROM ubuntu:17.10
+FROM ubuntu:latest
 
 MAINTAINER Thomas Schmidt
 
@@ -121,7 +121,6 @@ RUN sdkmanager "system-images;android-28;google_apis;x86" | echo y
 RUN sdkmanager "system-images;android-27;google_apis;x86" | echo y
 RUN sdkmanager "system-images;android-26;google_apis;x86" | echo y
 RUN sdkmanager "system-images;android-25;google_apis;x86_64" | echo y
-RUN sdkmanager "system-images;android-22;default;x86" | echo y
 RUN sdkmanager "system-images;android-22;default;x86_64" | echo y
 
 # Extras
