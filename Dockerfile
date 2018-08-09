@@ -57,7 +57,7 @@ RUN apt-get update -qq > /dev/null && \
         openjdk-8-jdk \
         openssh-client \
         pkg-config \
-        python-software-properties \
+        python3-software-properties \
         software-properties-common \
         unzip \
         zip \
