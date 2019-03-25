@@ -12,16 +12,15 @@ A **docker** image that can be used to supply an **Android** build environment. 
 ## What's Inside
 
 It includes the following components:
-* Ubuntu 17.10
-* Android SDK 22 25 26 27
-* Android build tools 25.0.1 25.0.2 25.0.3 26.0.0 26.0.1 26.0.2 27.0.0 27.0.1 27.0.2 27.0.3
+* Ubuntu latest
+* Android SDK 22 25 26 27 28
+* Android build tools 25.0.1 25.0.2 25.0.3 26.0.0 26.0.1 26.0.2 27.0.0 27.0.1 27.0.2 27.0.3 28.0.0 28.0.1 28.0.2 28.0.3
 * Android Emulator
 * System images:
-  * system-images;android-22;default;x86
-  * system-images;android-22;default;x86_64
-  * system-images;android-25;google_apis;x86_64
-  * system-images;android-26;google_apis;x86
+  * system-images;android-28;google_apis;x86
   * system-images;android-27;google_apis;x86
+  * system-images;android-26;google_apis;x86
+  * system-images;android-25;google_apis;x86_64
 * extra-android-m2repository
 * extra-google-google_play_services
 * extra-google-m2repository
