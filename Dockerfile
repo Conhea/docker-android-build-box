@@ -109,7 +109,7 @@ RUN sdkmanager "platforms;android-28" "platforms;android-27" "platforms;android-
 
 # Android build tools
 # Please keep these in descending order!
-RUN sdkmanager "build-tools;28.0.2" "build-tools;28.0.1" "build-tools;28.0.0" "build-tools;27.0.3" "build-tools;27.0.2" "build-tools;27.0.1" "build-tools;27.0.0" "build-tools;26.0.2" "build-tools;26.0.1" "build-tools;26.0.0" "build-tools;25.0.3" "build-tools;25.0.2" \
+RUN sdkmanager "build-tools;28.0.3" "build-tools;28.0.2" "build-tools;28.0.1" "build-tools;28.0.0" "build-tools;27.0.3" "build-tools;27.0.2" "build-tools;27.0.1" "build-tools;27.0.0" "build-tools;26.0.2" "build-tools;26.0.1" "build-tools;26.0.0" "build-tools;25.0.3" "build-tools;25.0.2" \
 "build-tools;25.0.1" > /dev/null
 
 # Android Emulator
@@ -121,7 +121,6 @@ RUN sdkmanager "system-images;android-28;google_apis;x86" | echo y
 RUN sdkmanager "system-images;android-27;google_apis;x86" | echo y
 RUN sdkmanager "system-images;android-26;google_apis;x86" | echo y
 RUN sdkmanager "system-images;android-25;google_apis;x86_64" | echo y
-RUN sdkmanager "system-images;android-22;default;x86_64" | echo y
 
 # Extras
 RUN sdkmanager "extras;android;m2repository" "extras;google;m2repository" "extras;google;google_play_services" | echo y
